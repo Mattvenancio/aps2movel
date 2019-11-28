@@ -1,0 +1,12 @@
+
+  <ion-card *ngFor="let filme of lista_filmes">
+    <ion-card-header>
+      <ion-img [src]="'https://image.tmdb.org/t/p/w200/'+filme.backdrop_path"></ion-img>
+      <ion-card-subtitle>{{this.release_date}}</ion-card-subtitle>
+      <ion-card-title>{{filme.title}}</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      {{filme.overview}}
+    </ion-card-content>
+  </ion-card>
